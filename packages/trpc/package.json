@@ -1,0 +1,19 @@
+{
+  "name": "@repo/trpc",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts",
+    "./routers": "./src/routers/index.ts"
+  },
+  "dependencies": {
+    "@repo/auth": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@trpc/server": "catalog:"
+  },
+  "devDependencies": {
+    "hono": "catalog:",
+    "typescript": "catalog:"
+  }
+}

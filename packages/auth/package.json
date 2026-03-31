@@ -1,0 +1,16 @@
+{
+  "name": "@repo/auth",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "dependencies": {
+    "@repo/db": "workspace:*",
+    "better-auth": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

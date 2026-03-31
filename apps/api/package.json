@@ -1,0 +1,23 @@
+{
+  "name": "@repo/api",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "bun --watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/trpc-server": "0.4.2",
+    "@repo/auth": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@repo/trpc": "workspace:*",
+    "@trpc/server": "catalog:",
+    "better-auth": "catalog:",
+    "hono": "catalog:"
+  },
+  "devDependencies": {
+    "tsdown": "0.21.7",
+    "typescript": "catalog:"
+  }
+}
