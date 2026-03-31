@@ -1,10 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "dist",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
     "types": ["vite/client"],
@@ -13,9 +9,5 @@
       "@repo/ui/*": ["../../packages/ui/src/*"]
     }
   },
-  "references": [
-    { "path": "../../packages/trpc" },
-    { "path": "../../packages/ui" }
-  ],
   "include": ["src"]
 }

@@ -1,9 +1,9 @@
-import { type NodePgDatabase, drizzle } from "drizzle-orm/node-postgres";
+import { drizzle } from "drizzle-orm/node-postgres";
 
 import * as schema from "./schema";
 
-export function createDb(): NodePgDatabase<typeof schema> {
+export function createDb() {
   return drizzle(process.env.DATABASE_URL ?? "", { schema });
 }
 
-export const db: NodePgDatabase<typeof schema> = createDb();
+export const db = createDb();
