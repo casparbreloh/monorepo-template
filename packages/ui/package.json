@@ -23,5 +23,8 @@
     "shadcn": "^4.1.1",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
+  },
+  "scripts": {
+    "typecheck": "tsgo --noEmit"
   }
 }
