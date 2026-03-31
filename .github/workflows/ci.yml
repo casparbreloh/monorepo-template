@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   quality:
-    name: Format, Lint, Build
+    name: Format, Lint, Typecheck, Build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
