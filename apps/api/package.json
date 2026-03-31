@@ -5,8 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsdown",
-    "dev": "bun --watch src/index.ts",
-    "typecheck": "tsgo --noEmit"
+    "dev": "bun --watch src/index.ts"
   },
   "dependencies": {
     "@hono/trpc-server": "0.4.2",

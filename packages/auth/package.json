@@ -6,14 +6,13 @@
     ".": "./src/index.ts",
     "./*": "./src/*.ts"
   },
+  "scripts": {
+  },
   "dependencies": {
     "@repo/db": "workspace:*",
     "better-auth": "catalog:"
   },
   "devDependencies": {
     "typescript": "catalog:"
-  },
-  "scripts": {
-    "typecheck": "tsgo --noEmit"
   }
 }
