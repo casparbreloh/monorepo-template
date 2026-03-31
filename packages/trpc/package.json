@@ -7,6 +7,9 @@
     "./*": "./src/*.ts",
     "./routers": "./src/routers/index.ts"
   },
+  "scripts": {
+    "typecheck": "tsgo --noEmit"
+  },
   "dependencies": {
     "@repo/auth": "workspace:*",
     "@repo/db": "workspace:*",
@@ -15,8 +18,5 @@
   "devDependencies": {
     "hono": "catalog:",
     "typescript": "catalog:"
-  },
-  "scripts": {
-    "typecheck": "tsgo --noEmit"
   }
 }
