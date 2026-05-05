@@ -22,22 +22,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          bun-version-file: package.json
+          node-version: 22
+          cache: pnpm
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Format
-        run: bun run format-check
+        run: pnpm nx format-check
 
       - name: Lint
-        run: bun run lint
+        run: pnpm nx lint
 
       - name: Typecheck
-        run: bun run typecheck
+        run: pnpm nx typecheck
 
       - name: Build
-        run: bun run build
+        run: pnpm nx build
