@@ -1,10 +1,6 @@
 packages:
-  - apps/api
-  - apps/web
-  - packages/auth
-  - packages/db
-  - packages/trpc
-  - packages/ui
+  - apps/*
+  - packages/*
 
 allowBuilds:
   esbuild: true
