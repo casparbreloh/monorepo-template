@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*"]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"],
+      "cache": true
+    },
+    "dev": {
+      "cache": false,
+      "continuous": true
+    },
+    "format-check": {
+      "cache": true,
+      "outputs": []
+    },
+    "lint": {
+      "cache": true,
+      "outputs": []
+    },
+    "typecheck": {
+      "cache": true,
+      "outputs": [],
+      "inputs": ["default", "^default", { "externalDependencies": ["@typescript/native-preview"] }]
+    }
+  },
+  "neverConnectToCloud": true,
+  "analytics": false
+}

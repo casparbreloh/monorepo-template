@@ -1,0 +1,10 @@
+{
+  "name": "trpc",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "command": "tsgo --noEmit",
+      "options": { "cwd": "{projectRoot}" }
+    }
+  }
+}

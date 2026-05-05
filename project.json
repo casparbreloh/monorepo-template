@@ -1,0 +1,23 @@
+{
+  "name": "monorepo-template",
+  "targets": {
+    "build": {
+      "command": "nx run-many -t build --exclude monorepo-template"
+    },
+    "dev": {
+      "command": "nx run-many -t dev --exclude monorepo-template"
+    },
+    "format": {
+      "command": "oxfmt"
+    },
+    "format-check": {
+      "command": "oxfmt --check"
+    },
+    "lint": {
+      "command": "oxlint"
+    },
+    "typecheck": {
+      "command": "nx run-many -t typecheck --exclude monorepo-template"
+    }
+  }
+}
