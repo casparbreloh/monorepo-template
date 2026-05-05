@@ -6,9 +6,12 @@ dist
 build
 *.tsbuildinfo
 
+# Tooling
+.nx
+
 # Environment variables
-.env
-.env.local
+.env*
+!.env*.example
 
 # IDEs and editors
 .vscode/*

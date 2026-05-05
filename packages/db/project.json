@@ -1,0 +1,26 @@
+{
+  "name": "db",
+  "projectType": "library",
+  "targets": {
+    "generate": {
+      "command": "drizzle-kit generate",
+      "options": { "cwd": "{projectRoot}" }
+    },
+    "migrate": {
+      "command": "drizzle-kit migrate",
+      "options": { "cwd": "{projectRoot}" }
+    },
+    "push": {
+      "command": "drizzle-kit push",
+      "options": { "cwd": "{projectRoot}" }
+    },
+    "studio": {
+      "command": "drizzle-kit studio",
+      "options": { "cwd": "{projectRoot}" }
+    },
+    "typecheck": {
+      "command": "tsgo --noEmit",
+      "options": { "cwd": "{projectRoot}" }
+    }
+  }
+}

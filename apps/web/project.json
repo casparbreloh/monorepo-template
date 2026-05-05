@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "command": "vite build",
+      "options": { "cwd": "{projectRoot}" },
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "dev": {
+      "command": "vite dev --port 5173",
+      "options": {
+        "cwd": "{projectRoot}",
+        "env": {
+          "VITE_API_URL": "http://localhost:3000"
+        }
+      }
+    },
+    "typecheck": {
+      "command": "tsgo --noEmit",
+      "options": { "cwd": "{projectRoot}" }
+    }
+  }
+}

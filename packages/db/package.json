@@ -6,20 +6,12 @@
     ".": "./src/index.ts",
     "./*": "./src/*.ts"
   },
-  "scripts": {
-    "generate": "drizzle-kit generate",
-    "migrate": "drizzle-kit migrate",
-    "push": "drizzle-kit push",
-    "studio": "drizzle-kit studio",
-    "typecheck": "tsgo --noEmit"
-  },
   "dependencies": {
-    "drizzle-orm": "0.45.2",
-    "pg": "8.20.0"
+    "drizzle-orm": "catalog:",
+    "pg": "catalog:"
   },
   "devDependencies": {
-    "@types/pg": "8.20.0",
-    "drizzle-kit": "0.31.10",
-    "typescript": "catalog:"
+    "@types/pg": "catalog:",
+    "drizzle-kit": "catalog:"
   }
 }
